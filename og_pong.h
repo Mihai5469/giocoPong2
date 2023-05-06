@@ -3,10 +3,14 @@
 
 using namespace std;
 
+//costanti usate per il input
+#define KEY_SEEN     1
+#define KEY_RELEASED 2
+
 //Strutura per le dimensioni del schermo
 struct dimensioni {
-	int w;
-	int h;
+	int w = 460;
+	int h = 380;
 };
 
 //strutura per coordinate 
@@ -29,3 +33,6 @@ void installPeri();		//installa periferiche
 //funzione che prende come parametro una variabile di tipo
 //palla e la disegna secondo le sue carateristiche
 void pallina(palla& p);
+
+//funzione che fa muovere la pallina
+void muovi_pallina(palla& p, dimensioni d);
