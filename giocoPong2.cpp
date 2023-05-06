@@ -21,6 +21,10 @@ int main()
 	d.w = 800;
 	d.h = 600;
 
+	palla p;
+	p.coordinata.x = 400;
+	p.coordinata.y = 300;
+
 	initiation();
 	installPeri();
 
@@ -30,6 +34,7 @@ int main()
 	while (true) {
 		al_clear_to_color(al_map_rgb(200, 200, 200));
 
+		pallina(p);
 
 		al_flip_display();
 

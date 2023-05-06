@@ -47,3 +47,8 @@ void pallina(palla& p) {
 		al_draw_circle(p.coordinata.x, p.coordinata.y, p.raggio, al_map_rgb(r, g, b), 2);
 	return;
 }
+
+void muovi_pallina(palla& p, dimensioni d) {
+
+	return;
+}

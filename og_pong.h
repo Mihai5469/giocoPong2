@@ -11,20 +11,21 @@ struct dimensioni {
 
 //strutura per coordinate 
 struct coordinate {
-	int x;
-	int y;
+	int x = 0;
+	int y = 0;
 };
 
 //strutura per creare palle
 struct palla {
 	coordinate coordinata;
-	string colore;
-	double raggio;
-	bool piena;
+	string colore = "red";
+	double raggio = 10;
+	bool piena = false;
 };
 
 void initiation();		//Inizializa Allegro5
 void installPeri();		//installa periferiche
+
 //funzione che prende come parametro una variabile di tipo
 //palla e la disegna secondo le sue carateristiche
 void pallina(palla& p);
